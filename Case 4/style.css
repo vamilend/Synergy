@@ -1,0 +1,72 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.swiper {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 10px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 400px; /* устанавливаем фиксированную высоту */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* сохраняем пропорции изображений */
+  border-radius: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+#imageCounter {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007bff;
+}
